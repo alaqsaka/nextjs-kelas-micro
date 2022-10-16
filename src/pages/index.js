@@ -2,6 +2,7 @@ import Head from "next/head";
 // import axios from "configs/axios";
 import Circle from "public/images/circle-accent-1.svg";
 import Header from "src/parts/Header";
+import Hero from "src/parts/Hero";
 
 export default function Home(props) {
   return (
@@ -16,6 +17,7 @@ export default function Home(props) {
           <div className="sunshine"></div>
           <div className="container mx-auto">
             <Header></Header>
+            <Hero />
           </div>
         </section>
       </main>
