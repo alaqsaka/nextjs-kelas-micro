@@ -6,7 +6,7 @@ import Image from "next/image";
 const RenderItem = ({ item }) => {
   console.log(item);
   return (
-    <div className="px-4">
+    <div className="">
       <div className="item relative">
         <figure className="item-image">
           <IconPlay></IconPlay>

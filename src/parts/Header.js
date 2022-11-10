@@ -32,7 +32,7 @@ const Header = ({ onLight }) => {
             </a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="/">
             <a
               className={[
@@ -44,7 +44,7 @@ const Header = ({ onLight }) => {
             </a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="/">
             <a
               className={[
@@ -56,7 +56,7 @@ const Header = ({ onLight }) => {
             </a>
           </Link>
         </li>
-        <li>
+        <li className="hidden md:block">
           <Link href="/">
             <a
               className={[
