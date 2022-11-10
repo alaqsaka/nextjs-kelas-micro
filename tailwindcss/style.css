@@ -64,7 +64,7 @@
     @apply fill-orange-500;
   }
 
-  .item:hover figure.item-image svg.icon-circle {
+  .item:hover figure.item-image svg.icon-play {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) rotateX(0deg);
   }

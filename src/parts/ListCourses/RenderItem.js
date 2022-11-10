@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 import IconPlay from "public/images/icon-play.svg";
-import Image from "next/image";
+// import Image from "next/image";
 
 const RenderItem = ({ item }) => {
   console.log(item);
@@ -10,13 +11,23 @@ const RenderItem = ({ item }) => {
       <div className="item relative">
         <figure className="item-image">
           <IconPlay></IconPlay>
-          <div className="relative" style={{ height: "170px", width: "100%" }}>
-            <Image
-              layout="fill"
-              src={item?.thumbnail ?? ""}
-              alt={item?.name ?? "Some Information"}
-            />
-          </div>
+          <img
+            style={{ maxHeight: "170px", width: "100%" }}
+            src={item?.thumbnail ?? ""}
+            alt={item?.name ?? "Some Information"}
+          />
+          {/* <div
+            className="relative image-div"
+            style={{ height: "170px", width: "100%" }}
+          > */}
+          {/* <Image
+            layout="fill"
+            height="170px"
+            width="100%"
+            src={item?.thumbnail ?? ""}
+            alt={item?.name ?? "Some Information"}
+          /> */}
+          {/* </div> */}
         </figure>
         <div className="item-meta">
           <h4 className="text-lg text-gray-900">
