@@ -4,8 +4,8 @@ import Image from "next/image";
 const Hero = () => {
   function submit() {}
   return (
-    <div className="flex justify-between items-center">
-      <div className="w-1/2">
+    <div className="flex justify-center items-center xl:justify-between text-center xl:text-left h-[50vh] xl:h-auto">
+      <div className="w-full md:w-1/2">
         <h1 className="text-5xl text-white mb-5">
           <span className="text-teal-400">The New Way </span>
           to <br /> Achieve Good
@@ -27,7 +27,7 @@ const Hero = () => {
         </form>
       </div>
 
-      <div className="w-1/2 flex justify-end pt-24 pr-16">
+      <div className="w-1/2 justify-end pt-24 pr-16 hidden xl:flex">
         <div className="relative" style={{ width: 369, height: 440 }}>
           <div
             className="absolute border-indigo-700 border-2 -mt-12 -mr-6 right-0"

@@ -6,20 +6,17 @@ import Image from "next/image";
 const RenderItem = ({ item }) => {
   console.log(item);
   return (
-    <div className="w-1/4 px-4">
+    <div className="px-4">
       <div className="item relative">
         <figure className="item-image">
           <IconPlay></IconPlay>
-          <Image
-            height="100%"
-            width="100%"
-            layout="responsive"
-            src={item?.thumbnail ?? ""}
-            alt={item?.name ?? "Some Information"}
-            style={{
-              maxHeight: "170px !important",
-            }}
-          />
+          <div className="relative" style={{ height: "170px", width: "100%" }}>
+            <Image
+              layout="fill"
+              src={item?.thumbnail ?? ""}
+              alt={item?.name ?? "Some Information"}
+            />
+          </div>
         </figure>
         <div className="item-meta">
           <h4 className="text-lg text-gray-900">

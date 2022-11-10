@@ -17,7 +17,7 @@ export default function Home() {
 
       <main>
         <section className="header-clipping pt-10">
-          <Circle className="absolute left-0 bottom-0"></Circle>
+          <Circle className="absolute left-0 bottom-0 hidden lg:block"></Circle>
           <div className="sunshine"></div>
           <div className="container mx-auto">
             <Header></Header>

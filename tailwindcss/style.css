@@ -8,6 +8,11 @@
     @apply cursor-pointer z-10 inset-0 absolute;
     content: "";
   }
+
+  .item figure.item-image {
+    position: relative;
+    perspective: 10000px;
+  }
 }
 
 @layer components {
@@ -43,6 +48,7 @@
 
 @layer components {
   .item figure.item-image svg.icon-play {
+    content: "";
     position: absolute;
     width: 46px;
     height: 46px;
